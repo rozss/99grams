@@ -724,4 +724,9 @@
     "imgSrc": "projects/you-are-bezos/img/banner.png",
     "title": "You Are Jeff Bezos"
   }
+    {
+    "link": "projects/Run 2/index.html",
+    "imgSrc": "projects/flappy-bird/assets/thumb.png",
+    "title": "Run 2"
+  },
 ]
