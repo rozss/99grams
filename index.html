@@ -147,6 +147,12 @@
         width: 100%;
       }
     }
+
+    /* Hide the iframe (YouTube player) */
+    #music-player {
+      position: absolute;
+      top: -9999px; /* Hide the player offscreen */
+    }
   </style>
 </head>
 
@@ -166,6 +172,9 @@
       <p>&copy; 2024 ngl idek | <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">NEW SITE</a></p>
     </footer>
   </div>
+
+  <!-- Hidden YouTube Music Player -->
+  <iframe id="music-player" width="0" height="0" src="https://www.youtube.com/embed/rjm1qvtj46g?autoplay=1&mute=1&loop=1&playlist=rjm1qvtj46g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
   <!-- JavaScript to Handle Dynamic Content -->
   <script>
