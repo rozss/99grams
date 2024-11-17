@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+  <!-- Meta Tags for SEO and Social Sharing -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="keywords" content="front-end web developer, unblocked games, gaming, programming, javascript, coding, developer, minecraft" />
@@ -20,7 +21,7 @@
     body {
       background: linear-gradient(135deg, #2e2e2e, #121212);
       color: #fff;
-      font-family: 'Press Start 2P', sans-serif;
+      font-family: 'Press Start 2P', sans-serif; /* Minecraft-like font */
       margin: 0;
       padding: 0;
       display: flex;
@@ -37,9 +38,10 @@
       margin-bottom: 20px;
       color: #f07aff;
       letter-spacing: 2px;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Adds a Minecraft-style shadow effect */
     }
 
+    /* Subtitle Styles */
     #subtitle {
       font-size: 1.5rem;
       color: #bbb;
@@ -47,6 +49,7 @@
       animation: fadeIn 2s ease-out forwards;
     }
 
+    /* Button Styles */
     .button {
       cursor: pointer;
       display: inline-block;
@@ -77,6 +80,7 @@
       color: white;
     }
 
+    /* Card Style Container */
     .card-container {
       display: flex;
       flex-direction: column;
@@ -90,6 +94,11 @@
       backdrop-filter: blur(10px);
     }
 
+    .card-container h1 {
+      margin-top: 0;
+    }
+
+    /* Footer Styling */
     footer {
       font-size: 0.8rem;
       color: #888;
@@ -107,6 +116,7 @@
       color: #fff;
     }
 
+    /* Animations */
     @keyframes fadeIn {
       0% {
         opacity: 0;
@@ -118,6 +128,7 @@
       }
     }
 
+    /* Responsive Design */
     @media (max-width: 600px) {
       h1 {
         font-size: 2.5rem;
@@ -136,36 +147,27 @@
         width: 100%;
       }
     }
-
-    /* Visible YouTube Player for testing */
-    #music-player {
-      width: 0;
-      height: 0;
-      position: absolute;
-      top: 0; /* Making it visible for now */
-      left: 0;
-      z-index: -1; /* Keeps it in the background */
-    }
   </style>
 </head>
 
 <body>
+  <!-- Main Content -->
   <div class="card-container">
     <h1>ud</h1>
     <span id="subtitle">Loading...</span>
     <p>UPDATED Nov 17, 2024</p>
 
+    <!-- Buttons -->
     <a href="/projects.html" class="button green-btn">Start playing!</a>
     <a href="/misc.html" class="button purple-btn">Tools and settings</a>
 
+    <!-- Footer -->
     <footer>
       <p>&copy; 2024 ngl idek | <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">NEW SITE</a></p>
     </footer>
   </div>
 
-  <!-- YouTube Player -->
-  <iframe id="music-player" width="560" height="315" src="https://www.youtube.com/embed/rjm1qvtj46g?autoplay=1&loop=1&playlist=rjm1qvtj46g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+  <!-- JavaScript to Handle Dynamic Content -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       const subtitle = document.getElementById('subtitle');
