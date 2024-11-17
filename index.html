@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <!-- Meta Tags for SEO and Social Sharing -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="keywords" content="front-end web developer, unblocked games, gaming, programming, javascript, coding, developer, minecraft" />
@@ -12,16 +11,12 @@
   <meta name="author" content="3" />
   <title>ud</title>
 
-  <!-- External Font (Minecraft Font) -->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-  <!-- External Stylesheet -->
   <style>
     /* Global Styles */
     body {
       background: linear-gradient(135deg, #2e2e2e, #121212);
       color: #fff;
-      font-family: 'Press Start 2P', sans-serif; /* Minecraft-like font */
+      font-family: 'Press Start 2P', sans-serif;
       margin: 0;
       padding: 0;
       display: flex;
@@ -38,7 +33,7 @@
       margin-bottom: 20px;
       color: #f07aff;
       letter-spacing: 2px;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Adds a Minecraft-style shadow effect */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     }
 
     /* Subtitle Styles */
@@ -68,6 +63,7 @@
     .button:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      animation: moveBlur 0.2s ease-in-out;
     }
 
     .green-btn {
@@ -78,6 +74,19 @@
     .purple-btn {
       background-color: #b625cc;
       color: white;
+    }
+
+    /* Animation to create strong motion blur */
+    @keyframes moveBlur {
+      0% {
+        filter: blur(0px);
+      }
+      50% {
+        filter: blur(25px); /* Stronger blur */
+      }
+      100% {
+        filter: blur(0px);
+      }
     }
 
     /* Card Style Container */
@@ -98,7 +107,6 @@
       margin-top: 0;
     }
 
-    /* Footer Styling */
     footer {
       font-size: 0.8rem;
       color: #888;
@@ -116,7 +124,6 @@
       color: #fff;
     }
 
-    /* Animations */
     @keyframes fadeIn {
       0% {
         opacity: 0;
@@ -128,7 +135,6 @@
       }
     }
 
-    /* Responsive Design */
     @media (max-width: 600px) {
       h1 {
         font-size: 2.5rem;
@@ -151,23 +157,18 @@
 </head>
 
 <body>
-  <!-- Main Content -->
   <div class="card-container">
     <h1>ud</h1>
     <span id="subtitle">Loading...</span>
     <p>UPDATED Nov 17, 2024</p>
-
-    <!-- Buttons -->
     <a href="/projects.html" class="button green-btn">Start playing!</a>
     <a href="/misc.html" class="button purple-btn">Tools and settings</a>
 
-    <!-- Footer -->
     <footer>
-      <p>&copy; 2024 ngl idek | <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">NEW SITE</a></p>
+      <p>&copy; 2024 michael! | <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">NEW SITE</a></p>
     </footer>
   </div>
 
-  <!-- JavaScript to Handle Dynamic Content -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       const subtitle = document.getElementById('subtitle');
