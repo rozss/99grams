@@ -4,64 +4,70 @@
   <!-- Meta Tags for SEO and Social Sharing -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords" content="front-end web developer, unblocked games, programming, javascript, coding" />
-  <meta name="description" content="Welcome to ud, a lightweight, fast, and clean game site." />
-  <meta property="og:title" content="Welcome to ud lite, a fast game site" />
-  <meta property="og:description" content="A clean and fast game site for unblocked games." />
+  <meta name="keywords" content="front-end web developer, unblocked games, gaming, programming, javascript, coding, developer, minecraft" />
+  <meta name="description" content="Welcome to ud, a fast and sleek game site designed for fun and efficiency." />
+  <meta property="og:title" content="ud lite - A Clean, Fast Game Site" />
+  <meta property="og:description" content="Play your favorite unblocked games with a sleek, fast, and modern UI." />
   <meta property="og:site_name" content="ud.github.io" />
   <meta name="author" content="3" />
   <title>ud</title>
 
-  <!-- External Font (Google Fonts) -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  
+  <!-- External Font (Minecraft Font) -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
   <!-- External Stylesheet -->
   <style>
+    /* Global Styles */
     body {
-      background-color: #121212;
-      color: #f07aff;
-      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #2e2e2e, #121212);
+      color: #fff;
+      font-family: 'Press Start 2P', sans-serif; /* Minecraft-like font */
       margin: 0;
       padding: 0;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
+      flex-direction: column;
       text-align: center;
-      line-height: 1.5;
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 4rem;
+      font-weight: 500;
       margin-bottom: 20px;
+      color: #f07aff;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Adds a Minecraft-style shadow effect */
     }
 
+    /* Subtitle Styles */
     #subtitle {
-      font-size: 1.5em;
+      font-size: 1.5rem;
+      color: #bbb;
+      margin-bottom: 40px;
+      animation: fadeIn 2s ease-out forwards;
     }
 
-    p {
-      max-width: 600px;
-      margin: 20px auto;
-    }
-
-    button {
+    /* Button Styles */
+    .button {
       cursor: pointer;
-      padding: 15px 32px;
-      font-size: 16px;
+      display: inline-block;
+      padding: 16px 36px;
+      font-size: 1.2rem;
       font-weight: 500;
       text-align: center;
       text-decoration: none;
-      border-radius: 30px;
-      border: none;
-      transition: background-color 0.3s ease;
-      width: 220px;
+      border-radius: 50px;
       margin-top: 20px;
+      transition: all 0.3s ease;
+      border: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
     }
 
-    button:hover {
-      background-color: #16b37b;
+    .button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     }
 
     .green-btn {
@@ -74,44 +80,96 @@
       color: white;
     }
 
+    /* Card Style Container */
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+      width: 100%;
+      backdrop-filter: blur(10px);
+    }
+
+    .card-container h1 {
+      margin-top: 0;
+    }
+
+    /* Footer Styling */
     footer {
-      font-size: 0.9em;
+      font-size: 0.8rem;
+      color: #888;
       margin-top: 40px;
-      color: #f07aff;
     }
 
     footer a {
       color: #f07aff;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
 
     footer a:hover {
-      text-decoration: underline;
+      color: #fff;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      #subtitle {
+        font-size: 1.2rem;
+      }
+
+      .card-container {
+        padding: 20px;
+        max-width: 90%;
+      }
+
+      .button {
+        width: 100%;
+      }
     }
   </style>
 </head>
 
 <body>
-  <h1>ud</h1>
-  <span id="subtitle">Loading...</span>
+  <!-- Main Content -->
+  <div class="card-container">
+    <h1>ud</h1>
+    <span id="subtitle">Loading...</span>
+    <p>UPDATED Nov 14, 2024</p>
 
-  <!-- Game Buttons -->
-  <p>
-    UPDATED Nov 14, 2024<br />
-    <a href="/projects.html"><button class="green-btn">Start playing!</button></a><br />
-    <a href="/misc.html"><button class="purple-btn">Tools and settings</button></a>
-  </p>
+    <!-- Buttons -->
+    <a href="/projects.html" class="button green-btn">Start playing!</a>
+    <a href="/misc.html" class="button purple-btn">Tools and settings</a>
 
-  <!-- Footer Information -->
-  <footer>
-    <p>&copy; ngl idek | <a href="https://github.com/ud" target="_blank" rel="noopener noreferrer">Visit our GitHub</a></p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 ngl idek | <a href="https://github.com/ud" target="_blank" rel="noopener noreferrer">Visit our GitHub</a></p>
+    </footer>
+  </div>
 
-  <!-- Modern JavaScript -->
+  <!-- JavaScript to Handle Dynamic Content -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      // Display message after page load
       const subtitle = document.getElementById('subtitle');
       subtitle.innerText = "Welcome to ud, enjoy the games!";
     });
